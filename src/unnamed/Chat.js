@@ -1,19 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import Title from "./Title"
 
-class Chat extends Component {
-    componentDidMount() {
-        console.log(this.props.match.params.id)
-    }
-    render() {
-        return (
-            <div className="chat">
-                <Title title="Chat">
-                    
-                </Title>
-            </div>
-        )
-    }
+function Chat(props) {
+    useEffect(() => {
+        console.log(props.match.params.id)
+    }, [])
+
+    return (
+        <div className="chat">
+            <Title title="Chat">
+                
+            </Title>
+        </div>
+    )
 }
 
 export default Chat
