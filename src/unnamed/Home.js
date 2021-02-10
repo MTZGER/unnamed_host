@@ -334,7 +334,7 @@ function Home() {
                 }
                 
                 {/* eventuell: display none, if searchChats is not nothing */}
-                <Link to={`/chat/public`} style={{textDecoration: "none"}}>
+                <Link to={`/unnamed_host/chat/public`} style={{textDecoration: "none"}}>
                     <div className="chat">
                         <h2>PUBLIC</h2>
                         <img alt="icon" src="https://webstockreview.net/images/family-icon-png-1.png" width="300"/>
@@ -342,7 +342,7 @@ function Home() {
                     </div>
                 </Link>
 
-                <Link to={`/chat/news`} style={{textDecoration: "none"}}>              
+                <Link to={`/unnamed_host/chat/news`} style={{textDecoration: "none"}}>              
                     <div className="chat">
                         <h2>NEWS</h2>
                         <img alt="icon" src="https://th.bing.com/th/id/Rd48a28f46aa28fb834f41ae313eb190e?rik=%2f6c1CwY7Oz14Ow&riu=http%3a%2f%2fclipartmag.com%2fimages%2fnewspaper-png-8.png&ehk=JuvOKT0xsHpr%2biU%2bEvM4Idmdo33CwpIx1%2b4X0e4Lh54%3d&risl=&pid=ImgRaw" width="300"/>
@@ -352,7 +352,7 @@ function Home() {
 
                 {
                     chats.map(({id, chat}) => (
-                        <Link to={`/chat/${id}`} style={{textDecoration: "none"}}>
+                        <Link to={`/unnamed_host/chat/${id}`} style={{textDecoration: "none"}}>
                             <div className="chat">
                                 <h2>{chat.name}</h2>
                                 <img alt="icon" src={chat.chatIcon} width="300"/>

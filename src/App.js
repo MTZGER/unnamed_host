@@ -9,11 +9,11 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/unnamed_host">
             <Home />
           </Route>
 
-          <Route path="/chat/:id" component={ Chat } />
+          <Route path="/unnamed_host/chat/:id" component={ Chat } />
         </Switch>
       </Router>
     </div>
